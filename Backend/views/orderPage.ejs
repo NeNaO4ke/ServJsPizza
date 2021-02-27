@@ -1,0 +1,76 @@
+<% include common/header.ejs %>
+
+<div class="main">
+    <div class="contact-form-1" >
+        <div class="row">
+            <div >
+                <form class="form-horizontal" id="order-form" name="myForm" method="post" action="/api/create-order/">
+                    <label for="inputName">1. Контактні дані</label>
+                    <div class="form-group name-group" >
+                        <label class="col-sm-2 control-label">Ім’я</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" id="inputName" placeholder="Ім’я Прізвище" name="username" pattern="^[А-Яа-яІіЇїЄє\s]+$" title="Заповніть поле використовуючи укр літери та пробіли" required >
+                        </div>
+                       <div class="help-block name-help-block"></div>
+                    </div>
+                    <div class="form-group phone-group">
+                        <label class="col-sm-2 control-label">Телефон</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="tel" id="inputPhone" pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" placeholder="+38__________" name="phone" title="Заповніть поле у форматі +38xxxxxxxxxx, де х цифра"  required>
+                        </div>
+                        
+                    </div>
+                    <div class="form-group address-group">
+                        <label class="col-sm-2 control-label">Адреса</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="text" id="inputAddress" placeholder="Київ, вул. Спаська, 2" name="address" pattern="^[0-9А-Яа-яІіЇїЄє\s,.\/\\]+$"title="Заповніть поле використовуючи укр літери, цифри та пробіли" required >
+                        </div>
+                    </div>
+                       <div class="bd-callout bd-callout-warning">
+                    <h4><b>Інформація про замовлення</b></h4>
+                    <p>
+                        <b>Приблизний час доставки:</b> невідомий
+                    </p>
+                    <p>
+                        <b>Адреса доставки:</b> невідома
+                    </p>
+                </div>
+                    
+                <div class="row">
+                    <div class="form-group next-step-wrap">
+                        <div class="next-step-width">
+                            <button id="order-btn" class="btn btn-warning btn-block next-step-button">
+                                Далі
+                                <i class="glyphicon glyphicon-chevron-right icon-white">
+                                </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+             
+            </div>
+            <div class="secondBlock">
+                <div class="orderBoxNav">
+                    <span class="orderWord">
+                        Замовлення
+                    </span>
+                    <div class="orangeBox badge btn-circle ordered">0</div>
+                    <span class="clearOrder">
+                        <a href="#" class="clearOrder">Очистити замовлення</a>
+
+                    </span>
+                </div>
+                <div class="orderBox">
+
+                </div>
+
+                <div class="billBox">
+                    <span class="resSumWord"> Сума замовлення</span>
+                    <span class="resSum ">0 грн.</span>
+                    
+
+                </div>
+            </div>
+        </div>
+        <% include common/footer.ejs %>

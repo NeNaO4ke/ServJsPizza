@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Pizza</title>
+
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- LESS основний файл -->
+    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />
+    <!-- LESS JavaScript компілятор -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="contact-form-1">
+            <div class="form-description-1">
+                1. Контактні дані
+            </div>
+            <div class="row">
+                <div>
+                    <form class="form-horizontal">
+                        <div class="form-group name-group">
+                            <label class="col-sm-2 control-label">Ім’я</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" id="inputName" placeholder="Ім’я Фамілія">
+                            </div>
+                            <span class="name-help-block" style="display:none">
+                                Введіть тільки власне ім’я, без цифр
+                            </span>
+                        </div>
+                        <div class="form-group phone-group">
+                            <label class="col-sm-2 control-label">Телефон</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" id="inputPhone" placeholder="+380994010999">
+                            </div>
+                            <span class="phone-help-block" style="display:none">
+                                Введіть номер телефону у форматі +380 або почніть з 0
+                            </span>
+                        </div>
+                        <div class="form-group address-group">
+                            <label class="col-sm-2 control-label">Адреса</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" id="inputAdress" placeholder="Київ, вул. Спаська, 2">
+                            </div>
+                            <span class="address-help-block" style="display:none">
+                                Введіть адресу доставки піци
+                            </span>
+                        </div>
+                    </form>
+                    <div class="bd-callout bd-callout-warning">
+                        <h4><b></b>Інформація про замовлення</h4>
+                    <p>
+                        <b>Приблизний час доставки:</b> невідомий
+                    </p>
+                    <p>
+                        <b>Адреса доставки:</b> невідома
+                    </p>
+                    </div>
+                    <div class="row">
+                        <div class="form-group next-step-wrap">
+                            <div class="next-step-width">
+                                <button type="button" class="btn btn-warning btn-block next-step-button">
+                                    Далі
+                                    <i class="glyphicon glyphicon-chevron-right icon-white">
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fixed-top">
+                <footer class="footer ">
+    <p class="foot"> Тут якийсь текст </p>
+    <p> Доставка піци не здійснюється </p>
+</footer>
+                    </div>
+                <div class="secondBlock">
+                    <div class="orderBoxNav">
+                        <span class="orderWord">
+                            Замовлення
+                        </span>
+                        <div class="orangeBox badge btn-circle ordered">0</div>
+                        <span class="clearOrder">
+                            <a href="#" class="clearOrder">Очистити замовлення</a>
+
+                        </span>
+                    </div>
+                    <div class="orderBox">
+
+                    </div>
+
+                    <div class="billBox">
+                        <span class="resSumWord"> Сума замовлення</span>
+                        <span class="resSum ">0 грн.</span>
+                        <div class="orderBtn">
+                            <button class=" btn btn-block btn-primary">Замовити</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!-- jQuery JavaScript -->
+            <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+
+            <!--Bootsrap JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+            <!--Own JavaScript -->
+            <script type="text/javascript" src="assets/js/main.js"> </script>
+</body>
+
+</html>

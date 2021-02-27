@@ -1,0 +1,52 @@
+<% include common/header.ejs %>
+
+<div class="main container-fluid">
+    <div class="firstBlock">
+        <div class=" tittle container-fluid">
+            <h2 class="allPizzas">Усі піцци <div class="orangeBox badge btn-circle">8</div>
+            </h2>
+        </div>
+        <div class="pizzaNav container-fluid">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#" id="all">Усі</a></li>
+                <li role="presentation"><a href="#" id="meat">М'ясні</a></li>
+                <li role="presentation"><a href="#" id="pineapple">З ананасами</a></li>
+                <li role="presentation"><a href="#" id="mushroom">З грибами</a></li>
+                <li role="presentation"><a href="#" id="ocean">З морепродуктами</a></li>
+                <li role="presentation"><a href="#" id="vega">Вега</a></li>
+            </ul>
+        </div>
+
+        <div class="">
+            <div class="row" id="pizza_list">
+
+            </div>
+        </div>
+    </div>
+    <div class="secondBlock">
+        <div class="orderBoxNav">
+            <span class="orderWord">
+                Замовлення
+            </span>
+            <div class="orangeBox badge btn-circle ordered">0</div>
+            <span class="clearOrder">
+                <a class="clearOrder">Очистити замовлення</a>
+
+            </span>
+        </div>
+        <div class="orderBox">
+
+        </div>
+
+        <div class="billBox">
+            <span class="resSumWord"> Сума замовлення</span>
+            <span class="resSum ">0 грн.</span>
+            <div class="orderBtn">
+                <a href="/order.html" class=" btn btn-block btn-primary">Замовити</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<% include common/footer.ejs %>
